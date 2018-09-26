@@ -4,11 +4,11 @@ Example web app for a front end job application.
 
 ## Testing the app
 
-* 1 Open Index.html in a web browser
-* 2 Delete ./distr folder
-* 3 Refresh index page
-* 4 Build the app
-* 5 Refresh the index page again
+1 Open Index.html in a web browser
+2 Delete ./distr folder
+3 Refresh index page
+4 Build the app
+5 Refresh the index page again
 
 ### Building the app:
 
