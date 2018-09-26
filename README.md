@@ -37,6 +37,16 @@ gulp
 ```
 since 'serve' is set as a default gulp task.
 
+## Displaying Neat grid
+
+To display a Neat grid uncomment first few lines relating to Neat's visual-grid variable in app/scss/main.scss file.
+
+```
+//$visual-grid-color: #bc6767 !global;
+//$visual-grid: true !global;
+//$visual-grid-index: 1 !global;
+```
+
 ## Author
 
  **Filip**
