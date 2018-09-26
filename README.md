@@ -2,27 +2,31 @@
 
 Example web app for a front end job application.
 
-##Setting up
+## Testing the app
 
-### 1. initialize NPM
+* 1. Open Index.html in a web browser
+* 2. Delete ./distr folder
+* 3. Refresh index page
+* 4. Build the app
+* 5. Refresh the index page again
+
+### Building the app:
+
+Install devDependencies:
 
 ```
-npm init
+npm install
 ```
 
-### 2. Look at project
+Build the app:
 
-* Open Index.html in a web browser
-* Delete ./distr folder
-* Refresh index page
-* Build the app
-
-### Building the app
 ```
 gulp build
 ```
 
-### Reloading browser on change
+## Reloading browser on change
+
+For production, to make the browser auto reload on change
 
 ```
 gulp serve
