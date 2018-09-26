@@ -1,0 +1,138 @@
+//Uncomment $visual-grid variables to display grid:
+//$visual-grid-color: #bc6767 !global;
+//$visual-grid: true !global;
+//$visual-grid-index: 1 !global;
+
+//Importing neat 1.8.0 and it's grid settings
+@import 'grid-settings';
+@import 'neat-1.8.0/neat';
+
+//Sass variables:
+$gray-col:#a3a3a3;
+$primary-col: #134880;
+$text-col: #484a4c;
+$font-stack: Arial, sans-serif;
+$assets: '../assets';
+
+//Sass mixin
+@mixin button-shared {
+	margin-top:10px;
+	height: 60px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	@include span-columns(1 of 8);
+}
+
+
+* {
+	margin: 0;
+	padding:0;
+}
+
+body {
+	font: 100% $font-stack;
+}
+.container {
+	@include outer-container;
+	width:100%;
+}
+
+//HEADER
+.header {
+	@include span-columns(12);
+	.nav {
+		@include span-columns(12 of 12);
+		.side {
+			@include span-columns(4 of 12);
+			background: $gray-col;
+			height: 100px;
+			border-radius: 0 0 4px 4px;
+		}
+		.links {
+			@include span-columns(8 of 12);
+			background: $gray-col;
+			height: 100px;
+			border-radius: 0 0 4px 4px;
+		}
+	}
+}
+
+//MAIN
+.main {
+	@include span-columns(12);
+	padding: 60px 0;
+	
+	.wrapper {
+		@include clearfix;
+		@include span-columns(8 of 12);
+		
+		.slider1, .slider2 {
+			height:200px;
+			@include span-columns(6 of 8);
+			overflow: visible;
+			direction: rtl;
+			white-space: nowrap;
+			
+			img {
+				margin-left: 10px;
+				height:200px;
+				border-radius: 8px;				
+			}
+		}
+		
+		.slider1 {
+			@include span-columns(8 of 8);
+		}
+		
+		.slider2 {
+			margin-top:10px;
+		}
+		
+		.btn-left {
+			@include button-shared;
+			@include omega;
+			@include shift(1);
+			background: url($assets+"/arrow-gray-left.png") no-repeat center;
+		}
+		
+		.btn-left:hover {
+			background-image: url($assets+"/arrow-blue-left.png");
+			border-color: $primary-col;
+		}
+		
+		.btn-right {
+			@include button-shared;
+			@include shift(1);
+			background: url($assets+"/arrow-gray-right.png") no-repeat center;
+		}
+		
+		.btn-right:hover {
+			background-image: url($assets+"/arrow-blue-right.png");
+			border-color: $primary-col;
+		}
+	}
+	
+	.text-box {
+		@include span-columns(4 of 12);
+		.heading {
+			color: $primary-col;
+			font-size: 1.8em;
+			line-height:1.4;
+			padding-bottom: 20px;
+			font-weight:bold;
+			
+		}
+		.text {
+			color: $text-col;
+			line-height:1.7;
+		}
+	}
+}
+
+//FOOTER
+.footer {
+	@include span-columns(12);
+	height: 100px;
+	background: $gray-col;
+	border-radius: 4px 4px 0 0;
+}
