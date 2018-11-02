@@ -2,15 +2,11 @@
 
 Example web app for a front end job application.
 
-## Testing the app
+## To rebuild the app
 
-1. Open Index.html in a web browser
-2. Delete ./distr folder
-3. Refresh index page
-4. Build the app
-5. Refresh the index page again
+### 1. Delete 'distr' folder
 
-### Building the app:
+### 2. Build the app:
 
 Install devDependencies:
 
@@ -23,10 +19,13 @@ Build the app:
 ```
 gulp build
 ```
+### 3. Done
 
-## Reloading browser on change
+Reload the browser
 
-For production, to make the browser auto reload on change
+## Serving changes:
+
+The browser will auto-reload, sass files will auto-compile, and js will auto-transpile to es5 on change.
 
 ```
 gulp serve
@@ -37,18 +36,8 @@ gulp
 ```
 since 'serve' is set as a default gulp task.
 
-## Displaying Neat grid
-
-To display a Neat grid uncomment first few lines relating to Neat's visual-grid variable in app/scss/main.scss file and then compile.
-
-```
-//$visual-grid-color: #bc6767 !global;
-//$visual-grid: true !global;
-//$visual-grid-index: 1 !global;
-```
-
 ## Author
 
  **Filip**
  
- Contact me at filip.biterski@gmail.com or fichorka@gmail.com
+ Contact me at filip.biterski@gmail.com or at fichorka@gmail.com
