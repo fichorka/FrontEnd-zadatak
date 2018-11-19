@@ -19,7 +19,7 @@ gulp build
 Open index.html
 
 
-## Serving changes:
+### Serving changes:
 
 The browser reloads, sass files compile, js transpiles to es5, and images minify on change.
 
