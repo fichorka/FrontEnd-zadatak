@@ -1,31 +1,27 @@
 # Frontend zadatak
 
-Example web app for a front end job application.
+Open index.html
 
 ## To rebuild the app:
 
-### 1. Delete 'distr' folder
+1. Delete 'distr' folder
 
-### 2. Build the app:
-
-Install devDependencies:
+2. Install devDependencies:
 
 ```
 npm install
 ```
 
-Build the app:
-
+2. Build the app:
 ```
 gulp build
 ```
-### 3. Done
+Open index.html
 
-Reload the browser
 
 ## Serving changes:
 
-The browser will auto-reload, sass files will auto-compile, and js will auto-transpile to es5 on change.
+The browser reloads, sass files compile, js transpiles to es5, and images minify on change.
 
 ```
 gulp serve
