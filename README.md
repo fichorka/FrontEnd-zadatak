@@ -2,7 +2,7 @@
 
 Example web app for a front end job application.
 
-## To rebuild the app
+## To rebuild the app:
 
 ### 1. Delete 'distr' folder
 
